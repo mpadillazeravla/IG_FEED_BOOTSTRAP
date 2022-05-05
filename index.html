@@ -26,42 +26,16 @@
 
           <nav class="navbar navbar-light bg-light">
 
-          <!-- Button trigger modal -->
+          <!-- Boton del modal / EL MODAL VA AL FINAL PARA QUE NO SE QUEDE PILLADO CON LA NAVBAR FIJA -->
                   <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Create a new post
                   </button>
 
-              <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <!-- Form dentro del modal -->
-
-                  <h5 class="modal-title form-label" id="exampleModalLabel">
-                    <div class="mb-3">
-                      <label for="exampleFormControlTextarea1" class="form-label"></label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      <!-- Fin form modal -->
-                    </div>
-                          
-                  <!-- iconos bajo input-->
-                </div>
-                <div class="modal-body">
-                  <i class="fa-solid fa-camera border border-black rounded fs-5"></i>
-                  <i class="fa-solid fa-location-dot border border-black rounded fs-5"></i>
-                      </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-light border border-black rounded" data-bs-dismiss="modal">Cancel</button>
-                  <button type="button" class="btn btn-success">Publish</button>
-                </div>
-              </div>
-            </div>
-          </div>
-              
+             
+          <!-- DROPDOWN -->
 
               <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn text-nowrap dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-gear"></i>                </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -169,20 +143,27 @@
 
 
 
-            <!--POSTS INDIVIDUALES-->
+            <!--POSTS INDIVIDUALES / LA PRIMERA LINEA ES PARA IDENTIFICAR CUANDO LA PILL LE LLAMA-->
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <div class="row bg-light">
-              <div class="col-sm-4 mt-3 mb-3 mx-auto">             <!--EL MX-AUTO CENTRA CONTENIDO EN LA PAGINA-->
+
+            <div class="row bg-light row d-flex">
+              <div class="col-5 mt-3 mb-3 mx-auto">             <!--EL MX-AUTO CENTRA CONTENIDO EN LA PAGINA-->
             <div class="card border-0">
-              <div class="card-header bg-white text-dark">
-                My first photo. 12/14
+              <div class="card-header bg-white text-dark pe-0 ps-0">
+                <div class="container-fluid d-flex justify-content-between px-2">
+                  <div class="card-tittle mb-0 d-flex justify-content-start">My first photo</div>
+                  <div class="card-text text-secondary d-flex justify-content-end">12/14</div>
+                 </div>
               <img src="https://picsum.photos/id/237/400/300" class="card-img-top" alt="...">
-              <div class="card-body p-0">
-                <p class="card-text">23 Likes</p>
-                <p class="card-text">This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
-                
-                <i class="fa-regular fa-heart"></i> Comment... 3puntos
-                </p>
+              <p class="px-3 py-2 mb-0">23 likes</p>
+              <p class="px-3 text-justify">This is my firts photo of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+              <div class="card-body py-0 text-secondary">
+                <div class="container-fluid px-2">
+                  <i class="far fa-heart d-inline-block px-2"></i>
+                  <p class="d-inline-block"> Comment...</p>
+                  <i class="fas fa-ellipsis-v d-inline-block float-end"></i>
+                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -190,31 +171,92 @@
 
 
 
-        <div class="row bg-light">
-          <div class="col-sm-4 mt-3 mb-3 mx-auto">             <!--EL MX-AUTO CENTRA CONTENIDO EN LA PAGINA-->
+        <div class="row bg-light row d-flex">
+          <div class="col-5 mt-3 mb-3 mx-auto">             <!--EL MX-AUTO CENTRA CONTENIDO EN LA PAGINA-->
         <div class="card border-0">
-          <div class="card-header bg-white text-dark">
-            My first photo. 12/14
+          <div class="card-header bg-white text-dark pe-0 ps-0">
+            <div class="container-fluid d-flex justify-content-between px-2">
+              <div class="card-tittle mb-0 d-flex justify-content-start">My first photo</div>
+              <div class="card-text text-secondary d-flex justify-content-end">12/14</div>
+             </div>
           <img src="https://picsum.photos/id/238/400/300" class="card-img-top" alt="...">
-          <div class="card-body p-0">
-            <p class="card-text">23 Likes</p>
-            <p class="card-text">This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
-            
-            <i class="fa-regular fa-heart"></i>Comment... 3puntos
-            </p>
+          <p class="px-3 py-2 mb-0">23 likes</p>
+          <p class="px-3 text-justify">This is my firts photo of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+          <div class="card-body py-0 text-secondary">
+            <div class="container-fluid px-2">
+              <i class="far fa-heart d-inline-block px-2"></i>
+              <p class="d-inline-block"> Comment...</p>
+              <i class="fas fa-ellipsis-v d-inline-block float-end"></i>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
 
+
+    <div class="row bg-light row d-flex">
+      <div class="col-5 mt-3 mb-3 mx-auto">             <!--EL MX-AUTO CENTRA CONTENIDO EN LA PAGINA-->
+    <div class="card border-0">
+      <div class="card-header bg-white text-dark pe-0 ps-0">
+        <div class="container-fluid d-flex justify-content-between px-2">
+          <div class="card-tittle mb-0 d-flex justify-content-start">My first photo</div>
+          <div class="card-text text-secondary d-flex justify-content-end">12/14</div>
+         </div>
+      <img src="https://picsum.photos/id/240/400/300" class="card-img-top" alt="...">
+      <p class="px-3 py-2 mb-0">23 likes</p>
+      <p class="px-3 text-justify">This is my firts photo of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+      <div class="card-body py-0 text-secondary">
+        <div class="container-fluid px-2">
+          <i class="far fa-heart d-inline-block px-2"></i>
+          <p class="d-inline-block"> Comment...</p>
+          <i class="fas fa-ellipsis-v d-inline-block float-end"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
      
                <!--FIN POSTS INDIVIDUALES-->
-              </div>
+            
             </div>
             
         
   </div>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+        <!-- Form dentro del modal -->
+
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+              <textarea class="form-control mb-3" id="message-text"></textarea>
+          </div>
+          <div class="form-group mb-3">
+              <label for="message-text" class="col-form-label"></label>
+              <!-- iconos bajo input-->
+              <i class="fas fa-camera" style="font-size: 20px; margin-right: 2px; padding: 4px; border: 1.5px solid lightgray; border-radius: 3px;"></i>
+              <i class="fas fa-map-marker-alt" style="font-size: 20px; padding: 4px 6px; border: 1.5px solid lightgray; border-radius: 3px;"></i>
+          </div>
+      </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light border border-black rounded" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Publish</button>
+        
+     <!-- Fin form modal -->
+
+      </div>
+    </div>
+  </div>
+</div>
     
+
 </body>
 </html>
